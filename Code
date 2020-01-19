@@ -1,0 +1,13 @@
+from random import *
+mot = ["Apple", "Banana", "Jamn", "Computer", "Surveyor", "Clock", "Brave", "Netflix"]
+NumWord = input("How many word do you want ?")
+def ActionPrincipal():
+    x = 0
+    action1 = input("Do you want a random word and number(Y/n)")
+    if action1 == "Y":
+        while x < int(NumWord):
+            x += 1
+            print(choice(mot), randint(0,100))
+    else:
+        print("Done")
+ActionPrincipal()
